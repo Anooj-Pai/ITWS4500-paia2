@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>News Ticker</title>
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="./assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="./assets/vendors/aos/dist/aos.css/aos.css">
+  <link rel="stylesheet" href="./assets/vendors/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="./assets/vendors/owl.carousel/dist/assets/owl.theme.default.min.css">
+  <!-- inject:css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- endinject -->
+</head>
+
+<body>
+  <div class="container-scroller">
+    <div class="main-panel">
+      <header id="header">
+        <div class="container">
+          <!-- partial:partials/_navbar.html -->
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="d-flex justify-content-between align-items-center navbar-top">
+              <h2>Lab 1</h2>
+            </div>
+            <div class="navbar-bottom-menu">
+              <button class="navbar-toggler" type="button" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="navbar-collapse justify-content-center collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-lg-flex justify-content-between align-items-center">
+                  <li class="nav-item active">
+                    <a class="nav-link active" onclick="change();">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="getData.sports();">Sports</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="getData.science();">Science</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="getData.health();">Health</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="getData.business();">Business</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" onclick="getData.tech();">Technology</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+  </div>
+
+  <div>
+    <h2 id="topic">General</h2>
+  </div>
+
+  <div class="page1">
+    <h1>LATEST NEWS</h1>
+    <div class="archive">
+      <article class="article">
+        <hr class="image">
+        <h3>Article Title</h3>
+        <hr>
+      </article>
+    </div>
+  </div>
+
+  <div class="page2">
+    <h1>LATEST NEWS</h1>
+    <div class="archive">
+      <article class="article">
+        <hr class="image">
+        <h3>Article Title</h3>
+        <hr>
+      </article>
+    </div>
+  </div>
+
+  <div class="page3">
+    <h1>LATEST NEWS</h1>
+    <div class="archive">
+      <article class="article">
+        <hr class="image">
+        <h3>Article Title</h3>
+        <hr>
+      </article>
+    </div>
+  </div>
+
+  <!-- inject:js -->
+  <script src="assets/vendors/js/vendor.bundle.base.js"></script>
+  <script src="script.js"></script>
+
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <script src="./assets/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="./assets/js/demo.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>

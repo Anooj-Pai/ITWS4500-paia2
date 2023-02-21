@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+:root {
+    --main: #547793;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 1;
+}
+
+.intro {
+    background-image: linear-gradient(#F7F2EF, var(--main));
+    text-align: center;
+    object-fit: cover;
+    color: #C1C9CC;
+    padding-bottom: 5%;
+}
+
+.portfolio {
+    background-color: var(--main);
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.stock-details {
+    color: #fff;
+    background-color: var(--main);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.ticker-list {
+    color: #fff;
+    text-align: center;
+    background-color: var(--main);
+}
+
+.footer {
+    background-color: var(--main);
+    font-size: large;
+    text-align: center;
+    color: #fff;
+}
+
+.nav {
+    text-align: center;
+    background-color: #F7F2EF;
+}
+
+#market {
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    color: #fff;
+}
+
+.market-names {
+    display: grid;
+    color: #fff;
+    font-size: large;
+    margin-top: 10px;
+    grid-template-columns: 10;
+    grid-auto-columns: auto;
+    grid-template-rows: 1;
+    grid-template-areas: "market1 market2";
+
+}
+
+.plot {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 80%;
+    display: inline-block;
+    color: var(--main)
+}
+
+.details {
+    margin-right: 5px;
+    font-size: medium;
+}
+
+.plot-stock {
+    justify-content: center;
+    align-items: center;
+}
+
+.introText {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 10rem;
+}
+
+.stock-stats {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #fff;
+    text-decoration-color: #fff;
+}
+
+.nav div.logo {
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.imgLogo {
+    width: 70%;
+    height: 70%;
+}
+
+.scroll {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #889199;
+}
+
+.scroll.arr {
+    top: 83%;
+}
+
+#tickerInput {
+    padding: 0.3em;
+    border-radius: 8px;
+}
+
+.btn {
+    width: 10em;
+    height: 3em;
+    margin: 0.8em;
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.6em 1.2em;
+    border-radius: 0.625em;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    color: black;
+}
+
+button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid coral;
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+    background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
+            rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%);
+    color: coral;
+}
+
+.flip-card-back {
+    background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
+            bisque 40%, rgb(255, 185, 160) 78%);
+    color: white;
+    transform: rotateY(180deg);
+}
