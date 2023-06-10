@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+
+:root {
+    --main: #547793;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 1;
+}
+
+.intro {
+    background-image: linear-gradient(#F7F2EF, var(--main));
+    text-align: center;
+    object-fit: cover;
+    color: #C1C9CC;
+    padding-bottom: 5%;
+}
+
+.portfolio {
+    background-color: var(--main);
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.stock-details {
+    color: #fff;
+    background-color: var(--main);
+    text-align: center;
+    padding-top: 10px;
+}
+
+.ticker-list {
+    color: #fff;
+    text-align: center;
+    background-color: var(--main);
+}
+
+.footer {
+    background-color: var(--main);
+    font-size: large;
+    text-align: center;
+    color: #fff;
+}
+
+.nav {
+    text-align: center;
+    background-color: #F7F2EF;
+}
+
+#market {
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
+    color: #fff;
+}
+
+.market-names {
+    display: grid;
+    color: #fff;
+    font-size: large;
+    margin-top: 10px;
+    grid-template-columns: 10;
+    grid-auto-columns: auto;
+    grid-template-rows: 1;
+    grid-template-areas: "market1 market2";
+
+}
+
+.database {
+    text-align: center;
+    background-color: var(--main);
+    color: #fff;
+}
+
+.plot {
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 80%;
+    display: inline-block;
+    color: var(--main)
+}
+
+.details {
+    margin-right: 5px;
+    font-size: medium;
+}
+
+.plot-stock {
+    justify-content: center;
+    align-items: center;
+}
+
+.introText {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 10rem;
+}
+
+.stock-stats {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: #fff;
+    text-decoration-color: #fff;
+}
+
+.nav div.logo {
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.imgLogo {
+    width: 70%;
+    height: 70%;
+}
+
+.scroll {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #889199;
+}
+
+.scroll.arr {
+    top: 83%;
+}
+
+#tickerInput {
+    padding: 0.3em;
+    border-radius: 8px;
+}
+
+.btn {
+    width: 10em;
+    height: 3em;
+    margin: 0.8em;
+    background: black;
+    color: white;
+    border: none;
+    padding: 0.6em 1.2em;
+    border-radius: 0.625em;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    color: black;
+}
+
+button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.input {
+    width: 190px;
+    height: 30px;
+    border: 2px solid transparent;
+    outline: none;
+    border-bottom: 2px solid #3f3f3f;
+    caret-color: #3f3f3f;
+    background-color: #212121;
+    padding: 5px;
+    transition: .5s linear;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.input:focus {
+    border: 2px solid white;
+    caret-color: white;
+    color: white;
+    box-shadow: 4px 4px 10px #070707;
+}
+
+.input:focus::placeholder {
+    color: white;
+}
+
+textarea {
+    background-color: #212121;
+    color: white;
+}
